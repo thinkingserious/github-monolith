@@ -4,7 +4,15 @@ This is sample code for a OSCON 2019 tutorial: https://conferences.oreilly.com/o
 
 ## Installation
 
-Update `.env_sample`.
+```bash
+git clone https://github.com/thinkingserious/github-monolith.git
+cd github-monolith
+```
+
+* Update `.env_sample`.
+* Open `examples/*` and update the repos in `all_repos`.
+* Open `examples/send_emails` and update the email in the `send_email` function.
+* Open `examples/send_sms` and update the to and from phone numbers in the `send_sms` function.
 
 ```bash
 mv ./.env_sample ./.env
@@ -19,12 +27,6 @@ curl http://$GITHUB_MANAGER_IP
 ## Quickstart
 
 Go to `http://<$GITHUB_MANAGER_IP>` in your browser.
-
-Open `examples/*` and update the repos in `all_repos`.
-
-Open `examples/send_emails` and update the email in the `send_email` function.
-
-Open `examples/send_sms` and update the to and from phone numbers in the `send_sms` function.
 
 ```bash
 python examples/get_all_issues.py
