@@ -2,6 +2,12 @@
 
 This is sample code for a OSCON 2019 tutorial: https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/76039
 
+## Pre-requisites
+
+* [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
+* [Docker](https://docs.docker.com/install)
+* [Clone GitHub Microservices](https://github.com/thinkingserious/github-microservices)
+
 ## Installation
 
 ```bash

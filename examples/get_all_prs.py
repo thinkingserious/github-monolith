@@ -20,7 +20,7 @@ total_prs_to_review = 0
 for repo in all_repos:
     prs = get_prs(repo)
     for pr in prs:
-        print(f"{pr['number']}: {pr['title']} - {pr['url']}")
+        print('{0}: {1} - {2}'.format(pr['number'], pr['title'], pr['url']))
         total_prs_to_review += 1
 
 print("There are a total of {} open prs needing a code review across all repos".format(total_prs_to_review))

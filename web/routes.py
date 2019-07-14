@@ -1,5 +1,5 @@
 import os
-from flask import Blueprint, jsonify, current_app, request
+from flask import Blueprint, jsonify, current_app, request, render_template
 from github import Github
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
@@ -7,8 +7,8 @@ from twilio.rest import Client
 routes_blueprint = Blueprint('routes', __name__)
 
 @routes_blueprint.route('/', methods=['GET'])
-def hello_world():
-    return 'Hello World'
+def hello_cold_monolith_world():
+    return render_template('index.html', title='OSCON 2019')
 
 @routes_blueprint.route('/github/prs', methods=['GET'])
 def get_prs():
