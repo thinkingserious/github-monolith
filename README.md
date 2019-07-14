@@ -5,7 +5,15 @@ This is sample code for a OSCON 2019 tutorial: https://conferences.oreilly.com/o
 ## Pre-requisites
 
 * [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
+  * [OS X](https://download.virtualbox.org/virtualbox/6.0.8/VirtualBox-6.0.8-130520-OSX.dmg)
+  * [Windows](https://download.virtualbox.org/virtualbox/6.0.8/VirtualBox-6.0.8-130520-Win.exe)
+  * [Ubuntu 18.04 / 18.10 / 19.04 / Debian 10](https://download.virtualbox.org/virtualbox/6.0.8/virtualbox-6.0_6.0.8-130520~Ubuntu~bionic_amd64.deb)
+  * [openSUSE 15.0](https://download.virtualbox.org/virtualbox/6.0.8/VirtualBox-6.0-6.0.8_130520_openSUSE150-1.x86_64.rpm)
+  * [Fedora 29 / 30](https://download.virtualbox.org/virtualbox/6.0.8/VirtualBox-6.0-6.0.8_130520_fedora29-1.x86_64.rpm)
 * [Docker](https://docs.docker.com/install)
+  * [OS X](https://download.docker.com/mac/stable/Docker.dmg)
+  * [Windows](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe)
+  * [Linux x86](https://download.docker.com/linux/static/stable/x86_64/docker-17.03.0-ce.tgz)
 * [Clone GitHub Microservices](https://github.com/thinkingserious/github-microservices)
 
 ## Installation
