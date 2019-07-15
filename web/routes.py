@@ -40,11 +40,8 @@ def send_email():
         to_emails=r['to_email'],
         subject=r['subject'],
         html_content=r['content'])
-    try:
-        sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
-        response = sg.send(message)
-    except Exception as e:
-        return jsonify([{"message": str(e)}]), 500
+    sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
+    response = sg.send(message)
     return jsonify([{"message": "success"}]), 200
 
 @routes_blueprint.route('/sms', methods=['POST'])
@@ -53,13 +50,10 @@ def send_sms():
     account_sid = os.environ.get('TWILIO_ACCOUNT_SID')
     auth_token = os.environ.get('TWILIO_AUTH_TOKEN')
     client = Client(account_sid, auth_token)
-    try:
-        message = client.messages \
-                        .create(
-                            body=r['body'],
-                            from_=r['from_number'],
-                            to=r['to_number']
-                        )
-    except Exception as e:
-        return jsonify([{"message": str(e)}]), 500
+    message = client.messages \
+                    .create(
+                        body=r['body'],
+                        from_=r['from_number'],
+                        to=r['to_number']
+                    )
     return jsonify([{"message": "success"}]), 200
